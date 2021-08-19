@@ -17,6 +17,7 @@ namespace Dnd
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "https://localhost:5001/api/CharacterSheets";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -28,8 +29,18 @@ namespace Dnd
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DndContext>(options =>
-        options.UseSqlServer(Configuration.GetConnectionString("DndContext")));
+                options.UseSqlServer(Configuration.GetConnectionString("DndContext")));
+
             services.AddControllers();
+
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod();
+                    });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +54,8 @@ namespace Dnd
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 

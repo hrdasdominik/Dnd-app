@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Dnd.Models;
 using Dnd.Services;
+using Microsoft.AspNetCore.Cors;
 
 namespace Dnd.Controllers
 {
+    [EnableCors]
     [Route("api/[controller]")]
     [ApiController]
     public class CharacterSheetsController : ControllerBase
