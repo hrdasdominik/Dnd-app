@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DQSt+Vui3TWsdip07Brhs/QS3MYlOatPZDgEt009szbeZ9P9wMb7HrcZLPIYAES7RulKUbhQik4k0ZPXh47YYw==",
+  "dgSpecHash": "shOVbhZPbuFhwgqArtmNQY7a9IpY3lZ1bRIpMufEtyTGI2H6/FgYHE7QsBw6UvxOQhV68EHn8bagyNsf964F5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dominik\\source\\repos\\Dnd\\Dnd\\Dnd.csproj",
+  "projectFilePath": "C:\\Users\\Dominik\\source\\repos\\Dnd\\Dnd-app\\Dnd\\Dnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dominik\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Dominik\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

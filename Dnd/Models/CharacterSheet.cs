@@ -12,11 +12,6 @@ namespace Dnd.Models
     {
         public class Root
         {
-            public Root()
-            {
-                AbilityScores = new HashSet<AbilityScore>();
-            }
-
             [Key]
             public int Id { get; set; }
             public string Name { get; set; }
@@ -35,20 +30,26 @@ namespace Dnd.Models
             public string HitDice { get; set; }
             public string HitDiceMax { get; set; }
             public int ProficiencyBonus { get; set; }
-            public ICollection<AbilityScore> AbilityScores { get; set; }
             public int PassivePerception { get; set; }
+            [ForeignKey("Id")]
+            public AbilityScores abilityScores { get; set; }
+            [ForeignKey("Id")]
+            public AbilityModifiers abilityModifiers { get; set; }
+            [ForeignKey("Id")]
+            public SavingThrows savingThrows { get; set; }
+            [ForeignKey("Id")]
+            public Skills skills { get; set; }
+
             public string PersonalityTraits { get; set; }
             public string Ideals { get; set; }
             public string Bonds { get; set; }
             public string Flaws { get; set; }
         }
 
-        public class AbilityScore
+        public class AbilityScores
         {
             [Key]
             public int Id { get; set; }
-            [ForeignKey("Id")]
-            public int IdChar { get; set; }
             public int Strength { get; set; }
             public int Dexterity { get; set; }
             public int Constitution { get; set; }
@@ -57,29 +58,34 @@ namespace Dnd.Models
             public int Charisma { get; set; }
         }
 
-        public class AbilityMod
+        public class AbilityModifiers
         {
-            public int ModStrength { get; set; }
-            public int ModDexterity { get; set; }
-            public int ModConstitution { get; set; }
-            public int ModIntelligence { get; set; }
-            public int ModWisdom { get; set; }
-            public int ModCharisma { get; set; }
+            [Key]
+            public int Id { get; set; }
+            public int Strength { get; set; }
+            public int Dexterity { get; set; }
+            public int Constitution { get; set; }
+            public int Intelligence { get; set; }
+            public int Wisdom { get; set; }
+            public int Charisma { get; set; }
         }
 
-        public class SavingThrow
+        public class SavingThrows
         {
-            public int SavingStrength { get; set; }
-            public int SavingDexterity { get; set; }
-            public int SavingConstitution { get; set; }
-            public int SavingIntelligence { get; set; }
-            public int SavingWisdom { get; set; }
-            public int SavingCharisma { get; set; }
+            [Key]
+            public int Id { get; set; }
+            public int Strength { get; set; }
+            public int Dexterity { get; set; }
+            public int Constitution { get; set; }
+            public int Intelligence { get; set; }
+            public int Wisdom { get; set; }
+            public int Charisma { get; set; }
         }
 
-        [Keyless]
-        public class Skill
+        public class Skills
         {
+            [Key]
+            public int Id { get; set; }
             public int Acrobatics { get; set; }
             public int AnimalHandling { get; set; }
             public int Arcana { get; set; }

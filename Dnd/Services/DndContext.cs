@@ -15,8 +15,8 @@ namespace Dnd.Services
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<CharacterSheet.Root>().HasMany(sheet => sheet.AbilityScores).WithOne().HasForeignKey(con => con.IdChar);
         }
+
         public DbSet<CharacterSheet.Root> CharacterSheets { get; set; }
     }
 }
