@@ -2,33 +2,140 @@
   margin: 0;
   /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;*/
+    sans-serif;*/
+}
+
+@font-face{
+    font-family: DnD;
+    src: url(../src/DnDC.ttf);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background-color: aquamarine;
+  /*background-image: url("../src/charsheet.png");*/
+  /*background-color: aquamarine;*/
 }
 
 .header {
-  width: 100vw;
-  height: 10vh;
-  background-color: blanchedalmond;
+  text-align: center;
+  font-family: DnD;
+  color: black;
+  background-color: yellow;
 }
 
 .header h1 {
   position: relative;
-  top: 50%;
-  left: 50%;
+  width: 100%;
 }
 
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
 
+.navbar a:hover {
+  background-color: hotpink;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  width: 100%;
+  display: block;
+  background-color: rgb(184, 89, 121);
+}
+
+.sidebar {
+  background-color: lawngreen;
+}
+
+.main-container {
+  background-color: red;
+}
+
+.page-container {
+  background-color: rosybrown;
+}
+
+.name-container {
+  text-align: center;
+  background-color: royalblue;
+  float: left;
+}
+
+.small-box {
+  text-align: center;
+  background-color: salmon;
+  float: left;
+}
+
+@media (max-width: 400px) {
+  .header {
+    font-size: larger;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 600px) {
+  
+}
+
+@media (min-width: 601px) and (max-width: 1333px) {
+  
+}
+
+@media (min-width: 1334px) {
+  .header {
+    font-size: xxx-large;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+  }
+
+  .navbar {
+      background-color: gray;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+  }
+
+  .navbar a {
+    padding: 0.5%;
+    font-size: 21px;
+  }
+
+  .main {
+    height: 77.5%;
+  }
+
+  .sidebar {
+    width: 15%;
+    height: 100%;
+    float: left;
+  }
+
+  .main-container {
+    width: 80%;
+    height: 95%;
+    padding: 1%;
+    float: left;
+  }
+
+  .page-container {
+    width: 30%;
+    height: 100%;
+    margin-left: 2.5%;
+    float: left;
+  }
+
+  .name-container {
+    width: 50%;
+    height: 7%;
+  }
+
+  .small-box {
+    width: 23.3%;
+    height: 7%;
+  }
 }
