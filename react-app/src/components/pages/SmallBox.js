@@ -1,4 +1,4 @@
-const SmallBox = ({title}, {name}) => {
+const SmallBox = ({title, name}) => {
     return (
         <div className="small-box">
             <h6>{title}</h6>

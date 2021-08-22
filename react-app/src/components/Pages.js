@@ -1,5 +1,6 @@
 import Name from "./pages/Name"
 import SmallBox from "./pages/SmallBox"
+import AbilityBox from "./pages/AbilityBox"
 
 const Pages = ({ title }) => {
     return (
@@ -8,6 +9,10 @@ const Pages = ({ title }) => {
                 <>
                     <Name name="Thorin, son of Grim"/> 
                     <SmallBox title="Class & Level" name="Ranger (8)"/>
+                    <SmallBox title="Background" name="Soldier" />
+                    <SmallBox title="Player name" name="Branko" />
+                    <AbilityBox  name="ability" />
+                    <AbilityBox name="health" />
                 </>
             }
             {title === '2' && <h2>This is page 2</h2>}

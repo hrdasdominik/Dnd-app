@@ -71,6 +71,12 @@
   float: left;
 }
 
+.ability-container {
+  text-align: center;
+  background-color: aqua;
+  float: left;
+}
+
 @media (max-width: 400px) {
   .header {
     font-size: larger;
@@ -116,8 +122,8 @@
   }
 
   .main-container {
-    width: 80%;
-    height: 95%;
+    width: 83%;
+    height: 95.4%;
     padding: 1%;
     float: left;
   }
@@ -130,12 +136,18 @@
   }
 
   .name-container {
-    width: 50%;
-    height: 7%;
+    width: 40%;
+    height: 8%;
   }
 
   .small-box {
-    width: 23.3%;
-    height: 7%;
+    width: 20%;
+    height: 8%;
+  }
+
+  .ability-container {
+    width: 50%;
+    height: 90.1%;
+    padding-top: 2.5%;
   }
 }
