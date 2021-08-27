@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bela Rit\\source\\repos\\Dnd-app\\Dnd\\Dnd.csproj": {}
+    "C:\\Users\\Dominik\\source\\repos\\Dnd\\Dnd-app\\Dnd\\Dnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bela Rit\\source\\repos\\Dnd-app\\Dnd\\Dnd.csproj": {
+    "C:\\Users\\Dominik\\source\\repos\\Dnd\\Dnd-app\\Dnd\\Dnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bela Rit\\source\\repos\\Dnd-app\\Dnd\\Dnd.csproj",
+        "projectUniqueName": "C:\\Users\\Dominik\\source\\repos\\Dnd\\Dnd-app\\Dnd\\Dnd.csproj",
         "projectName": "Dnd",
-        "projectPath": "C:\\Users\\Bela Rit\\source\\repos\\Dnd-app\\Dnd\\Dnd.csproj",
-        "packagesPath": "C:\\Users\\Bela Rit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bela Rit\\source\\repos\\Dnd-app\\Dnd\\obj\\",
+        "projectPath": "C:\\Users\\Dominik\\source\\repos\\Dnd\\Dnd-app\\Dnd\\Dnd.csproj",
+        "packagesPath": "C:\\Users\\Dominik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dominik\\source\\repos\\Dnd\\Dnd-app\\Dnd\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bela Rit\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Dominik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

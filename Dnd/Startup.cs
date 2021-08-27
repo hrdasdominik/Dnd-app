@@ -33,7 +33,7 @@ namespace Dnd
 
             services.AddControllers();
 
-            //CORS policy for allowing 
+            //CORS policy for allowing front-end to connect
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(

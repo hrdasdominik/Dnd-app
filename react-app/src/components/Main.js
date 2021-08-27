@@ -1,11 +1,9 @@
-import Sidebar from "./Sidebar"
-import PageContainer from "./PageContainer"
+import Page from "./pages/Page"
 
 const Main = () => {
     return (
-        <div className="main">
-            <Sidebar />
-            <PageContainer />
+        <div className="container">
+            <Page />
         </div>
     )
 }
